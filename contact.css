@@ -1,0 +1,103 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header and navigation */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    transition: background-color 0.3s ease;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #4CAF50;
+}
+
+nav ul li {
+    flex: 1;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Arial Black', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    background-color: #398E3D;
+}
+
+.header nav ul li.active a {
+    background-color: darkgreen; /* Set your desired active color */
+    /* Add any additional styles for the active state */
+}
+
+/* Style the about text */
+.contact-container {
+    max-width: 1350px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #A2DA8B;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the contact options */
+.contact-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contact-method1,
+.contact-method2,
+.contact-method3 {
+    flex-basis: calc(33.333% - 20px); /* Используйте calc для учета отступов между элементами */
+    margin-right: 20px; /* Добавьте отступ между элементами */
+}
+
+/* Style the iframe */
+.card iframe{
+    width: 600px; /* Автоматический размер по ширине контейнера */
+    height: 500px; /* Сохранение пропорций */
+    border: 0; /* Удаление границы */
+    border-radius: 5px; /* Скругленные углы */
+    margin: 10px 0; /* Отступ сверху и снизу */
+    overflow: hidden; /* Обрезка содержимого, если оно выходит за границы контейнера */
+
+}
+.image-container img {
+    width: 600px; /* Автоматический размер по ширине контейнера */
+    height: auto; /* Сохранение пропорций */
+    border: 0; /* Удаление границы */
+    border-radius: 5px; /* Скругленные углы */
+    margin: 10px 0; /* Отступ сверху и снизу */
+    overflow: hidden; /* Обрезка содержимого, если оно выходит за границы контейнера */
+}
+
+/* Style the footer */
+.footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    font-family: 'Arial Black', sans-serif;
+}
+
+

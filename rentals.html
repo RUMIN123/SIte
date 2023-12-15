@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rentals</title>
+    <link rel="stylesheet" href="rentals.css">
+    <script>
+        // JavaScript для отображения текущей даты и времени
+        function displayDateTime() {
+            const dateTimeContainer = document.getElementById('dateTime');
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+            const formattedDateTime = now.toLocaleDateString('en-US', options);
+            dateTimeContainer.textContent = formattedDateTime;
+        }
+
+        // Вызываем функцию при загрузке страницы
+        window.onload = function () {
+            displayDateTime();
+        };
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="rentals.html">Rentals</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="smart-section">
+            <h2>Smart Tips</h2>
+            <p>Did you know? The best view comes after the hardest climb. Embrace the challenges, and let nature be your guide.</p>
+            <p>Life is an adventure, and so is every step you take. Whether you're renting or buying gear, make each moment count!</p>
+        </div>
+
+    <section class="rentals-section">
+        <h2>Our Gear for Rent</h2>
+
+        <div class="rental-item">
+            <img src="OIP%20(4).jpg" alt="Tent">
+            <h3>Tent</h3>
+            <p>Spacious and durable tent for a comfortable camping experience.</p>
+            <p class="price">$10 per day</p>
+            <button class="rent-button" onclick="location.href='mailto:romvas@outlook.ee?subject=Rent%20Tent'">Rent Now</button>
+        </div>
+
+        <div class="rental-item">
+            <img src="travelbackpacks-2048px-03628.webp" alt="Backpack">
+            <h3>Backpack</h3>
+            <p>Sturdy backpack with multiple compartments for your hiking needs.</p>
+            <p class="price">$5 per day</p>
+            <button class="rent-button" onclick="location.href='mailto:romvas@outlook.ee?subject=Rent%20Backpack'">Rent Now</button>
+        </div>
+
+        <!-- Добавлен еще один товар для аренды -->
+        <div class="rental-item">
+            <img src="sleeping bag.jpg" alt="Sleeping Bag">
+            <h3>Sleeping Bag</h3>
+            <p>Warm and cozy sleeping bag for a restful night's sleep during your outdoor adventures.</p>
+            <p class="price">$8 per day</p>
+            <button class="rent-button" onclick="location.href='mailto:romvas@outlook.ee?subject=Rent%20Sleeping%20Bag'">Rent Now</button>
+        </div>
+        <!-- Конец добавленного товара -->
+
+        <!-- Добавим раздел для продажи товаров -->
+        <h2>Our Gear for Sale</h2>
+
+        <div class="sale-item">
+            <img src="tent%20for%20sale.webp" alt="Tent">
+            <h3>Tent</h3>
+            <p>Own your spacious and durable tent for endless camping experiences.</p>
+            <p class="price">$99</p>
+            <button class="buy-button" onclick="location.href='mailto:romvas@outlook.ee?subject=Buy%20Tent'">Buy Now</button>
+        </div>
+
+        <div class="sale-item">
+            <img src="backpak%20for%20sale.jpg" alt="Backpack">
+            <h3>Backpack</h3>
+            <p>Get your own sturdy backpack with multiple compartments for all your hiking needs.</p>
+            <p class="price">$49</p>
+            <button class="buy-button" onclick="location.href='mailto:romvas@outlook.ee?subject=Buy%20Backpack'">Buy Now</button>
+        </div>
+
+        <!-- Добавлен еще один товар для покупки -->
+        <div class="sale-item">
+            <img src="sleeping%20bag%20for%20sale.jpg" alt="Sleeping Bag">
+            <h3>Sleeping Bag</h3>
+            <p>Your very own warm and cozy sleeping bag for comfortable nights under the stars.</p>
+            <p class="price">$69</p>
+            <button class="buy-button" onclick="location.href='mailto:romvas@outlook.ee?subject=Buy%20Sleeping%20Bag'">Buy Now</button>
+        </div>
+
+
+        <!-- Конец умного блока -->
+    </section>
+
+    <!-- Блок для отображения текущей даты и времени -->
+    <div id="dateTime" style="text-align: center; margin-top: 20px; font-weight: bold;"></div>
+
+    <footer class="footer">
+        <p>© 2023 TalTechRent. All rights reserved.</p>
+    </footer>
+</body>
+</html>
