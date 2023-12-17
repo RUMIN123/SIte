@@ -92,12 +92,8 @@ nav ul li a:hover {
 
 /* Style the footer */
 .footer {
+    text-align: center;
+    padding: 10px;
     background-color: #4CAF50;
     color: white;
-    text-align: center;
-    padding: 20px 0;
-    width: 100%;
-    font-family: 'Arial Black', sans-serif;
 }
-
-

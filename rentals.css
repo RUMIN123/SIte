@@ -67,11 +67,11 @@ nav ul li a:hover {
 
 .rental-item img {
     max-width: 100%;
-    height: auto;
+    height: 230px;
 }
 
 .rental-item h3 {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 18px;
 }
 
@@ -122,7 +122,7 @@ nav ul li a:hover {
 
 .sale-item img {
     max-width: 100%;
-    height: auto;
+    height: 230px;
 }
 
 .sale-item h3 {
